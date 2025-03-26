@@ -7,7 +7,7 @@ export default function Groups() {
     const styles = StyleSheet.create({
         container: {
             flex: 1,
-            backgroundColor: theme.COLORS.GRAY_200,
+            backgroundColor: theme.COLORS.GRAY_600,
             alignItems: 'center',
             justifyContent: 'center',
         },
