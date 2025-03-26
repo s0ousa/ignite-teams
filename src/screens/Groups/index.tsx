@@ -1,23 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Header } from '@components/Header';
+import { View } from 'react-native';
 import { useTheme } from 'src/contexts/ThemeContext';
 
 export default function Groups() {
     const theme = useTheme();
 
-    const styles = StyleSheet.create({
-        container: {
-            flex: 1,
-            backgroundColor: theme.COLORS.GRAY_600,
-            alignItems: 'center',
-            justifyContent: 'center',
-        },
-    });
-
     return (
-        <View style={styles.container}>
-            <Text>Groups</Text>
+        <View style={{ flex: 1, padding: 24, backgroundColor: theme.COLORS.GRAY_600 }}>
+            <Header />
         </View>
     );
 }
-
-
